@@ -46,6 +46,12 @@
     </ul>
 </div>
 <script src="/static/js/bundle.js"></script>
+
+<!-- IMPORTANT -->
+<!-- in the SSR page this script needs to be included into the output HTML -->
+<!-- so, at the moment when it will need to be `hydrate` it will be loaded  -->
+<!-- otherwise it will generate error and re-render render placeholder   -->
+<script src="http://localhost:3000/static/js/SomeDynamic.chunk.js"></script>
 <!--
   This HTML file is a template.
   If you open it directly in the browser, you will see an empty page.
